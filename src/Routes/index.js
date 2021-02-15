@@ -6,7 +6,7 @@ import Header from '../Components/Header';
 const Routes = ({search, handlerSearch}) => {
     return ( 
         <Router>
-            <Header handleSearch={handlerSearch} />
+            <Header handlerSearch={handlerSearch} />
             <Switch>
                 <Route path="/" exact component={Home} />
                 <Route path="/products">

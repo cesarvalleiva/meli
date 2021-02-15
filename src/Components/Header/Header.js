@@ -12,7 +12,7 @@ const Header = React.memo(({handlerSearch}) => {
 
         if(trimValue) {
             handlerSearch(trimValue);
-            history.push("/products");
+            history.push(`/products?search=${trimValue}`);
         }
     }
 
